@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# I run this file as root since I know what I put here and that I did it right, for my personal configuration.
+# This configuration may not work for all circumstances and I bear no responsibility for anyone's mishaps. :)
+#
+mkisofs -U -A "ubuntu-16.04.3-amd64-unattended.iso" -V "ubuntu-unattend" -volset "ubuntu-16.04.3-amd64-unattended" -J -joliet-long -r -v -T -o ../ubuntu-16.04.3-amd64-unattended.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -allow-limited-size .
