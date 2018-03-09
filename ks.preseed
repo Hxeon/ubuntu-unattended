@@ -59,6 +59,7 @@ d-i passwd/root-login boolean true
 d-i passwd/root-password password Password01
 d-i passwd/root-password-again password Password01
 d-i user-setup/allow-password-weak boolean true
+### Make sure to change this password in your personal implementation. I just put these here as examples.
 
 # Grub
 d-i grub-installer/grub2_instead_of_grub_legacy boolean true
